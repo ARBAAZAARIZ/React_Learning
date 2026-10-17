@@ -5,6 +5,8 @@ import Login,{Profile,Setting,UserKey} from './Login'
 import State_Learning from './State_Learning';
 import PropsUnderstanding from './PropsUnderstanding';
 import TakeInputField from './TakeInputField';
+import HandleCheckBoxValue from './HandleCheckBoxValue'
+import HandleRadioAndOptionValue from '../public/HandleRadioAndOptionValue';
 
  function transport(name){
     alert(name);
@@ -115,6 +117,15 @@ function App() {
       <h2>Taking Input fieled dynamic</h2>
 
       <TakeInputField/>
+
+      <hr />
+
+      <HandleCheckBoxValue/>
+
+      <hr />
+      <br />
+
+      <HandleRadioAndOptionValue/>
 
 
     </>
