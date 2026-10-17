@@ -3,6 +3,7 @@ import Header from "./Header"
 import './App.css'
 import Login,{Profile,Setting,UserKey} from './Login'
 import State_Learning from './State_Learning';
+import PropsUnderstanding from './PropsUnderstanding';
 
  function transport(name){
     alert(name);
@@ -18,9 +19,9 @@ function App() {
    let name2 = "Doe Jhon"
 
    const userObj = {
-    name: "Jhon Doe",
-    age: 30,
-    email: "jhoneDoe@gmail.com"
+    name: "Arbaaz alam",
+    age: 24,
+    email: "md.rocks@gmail.com"
    }
 
    const path = "https://th.bing.com/th?id=OIF.Mo9G22off7d%2bh6NGzoN%2bug&r=0&rs=1&pid=ImgDetMain&o=7&rm=3";
@@ -46,6 +47,11 @@ function App() {
     const transportDummy = ()=>{
     alert("Dummy Transport");
   }
+
+  let age2=24;
+
+    let collegeNames = ['BPUT','NIT','DU','MIT','IIT','IIIT','GIFT'];
+
   
 
   return (
@@ -54,6 +60,7 @@ function App() {
     <Login/>
     <Profile/>
     <Setting/>
+
 
     <button onClick={()=>alert("hello")}>Click</button>
     
@@ -89,6 +96,19 @@ function App() {
       <h1>------------------React State Learning ---------------------------</h1>
 
       <State_Learning/>
+
+
+      <h1>Learning Props how to sned data from one component to anothe component</h1>
+
+
+      {/* <PropsUnderstanding name={name} age={age}/>    */}
+
+      <hr />
+
+      <PropsUnderstanding user={userObj} collegeNames={collegeNames} name={name} age={age}>
+        <h1>Passing Html </h1>
+      </PropsUnderstanding>
+
 
     </>
   )

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Counter from "./Counter";
+import Toogle from "./Toogle";
 
 function State_Learning(){
 
@@ -38,6 +39,8 @@ function State_Learning(){
         <br /><br />
 
         <Counter/>
+
+        <Toogle/>
 
     </>
     )
