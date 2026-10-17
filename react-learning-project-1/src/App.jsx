@@ -4,6 +4,7 @@ import './App.css'
 import Login,{Profile,Setting,UserKey} from './Login'
 import State_Learning from './State_Learning';
 import PropsUnderstanding from './PropsUnderstanding';
+import TakeInputField from './TakeInputField';
 
  function transport(name){
     alert(name);
@@ -108,6 +109,12 @@ function App() {
       <PropsUnderstanding user={userObj} collegeNames={collegeNames} name={name} age={age}>
         <h1>Passing Html </h1>
       </PropsUnderstanding>
+
+      <hr />
+
+      <h2>Taking Input fieled dynamic</h2>
+
+      <TakeInputField/>
 
 
     </>
