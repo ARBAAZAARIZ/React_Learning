@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from "./Header"
 import './App.css'
 import Login,{Profile,Setting,UserKey} from './Login'
+import State_Learning from './State_Learning';
 
  function transport(name){
     alert(name);
@@ -84,6 +85,10 @@ function App() {
       <button onClick={()=>transport("Car")} > Car</button>
       <br />
       <button onClick={()=>transport("Bike")}>Bike</button>
+
+      <h1>------------------React State Learning ---------------------------</h1>
+
+      <State_Learning/>
 
     </>
   )
