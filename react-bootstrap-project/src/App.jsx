@@ -10,6 +10,7 @@ import UnderstandingPureComponent from './UnderstandingPureComponent'
 import Parent from './LiftingStateUp/Parent'
 import Object1_With_State from './ObjectWithState/Object1_With_State'
 import Array1 from './ArrayWithStateAndArrayOfObjectWithState/Array1'
+import USeActionStateHook from './handling_formgs/UseActionStateHook'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,6 +54,8 @@ function App() {
          <br />
 
          <Array1/>
+
+         <USeActionStateHook/>
 
     </>
   )
