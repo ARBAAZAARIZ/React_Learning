@@ -11,9 +11,13 @@ import Parent from './LiftingStateUp/Parent'
 import Object1_With_State from './ObjectWithState/Object1_With_State'
 import Array1 from './ArrayWithStateAndArrayOfObjectWithState/Array1'
 import USeActionStateHook from './handling_formgs/UseActionStateHook'
+import useToggleHook from './customHooks/useToggleHook'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const [tValue,setTValue] = useToggleHook(true);
+
 
   function passThisFunctionToChild(dynamicName){
     alert(`This function is passed from parent to child component\n  ${dynamicName}"Dynamic name passed`);
@@ -56,6 +60,17 @@ function App() {
          <Array1/>
 
          <USeActionStateHook/>
+
+         <hr />
+         <hr />
+
+         {
+          tValue? <h1>ON</h1>:<h1>OF</h1>
+         }
+
+
+         <h2>Text Displayed</h2>
+         <button onClick={setTValue}>toggle</button>
 
     </>
   )
